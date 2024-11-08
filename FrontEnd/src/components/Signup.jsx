@@ -39,6 +39,8 @@ function Signup() {
     }
 
 
+    // console.log("new user:",payload)
+
 
       fetch("http://localhost:3000/users/register",{
         method:"POST",
