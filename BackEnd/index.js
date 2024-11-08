@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.use("/users",userRouter)
 app.use("/lists",listRoutes)
-app.use("/listItems",listItemRoutes)
+// app.use("/listItems",listItemRoutes)
 app.listen(3000,async()=>{
    try {
     await connection
