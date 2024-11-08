@@ -42,7 +42,7 @@ listRoutes.patch("/update/:listId", async (req, res) => {
 
     const userIdInList = list.userId;
 
-    console.log("req.body",req.body)
+
 
     if (userId === userIdInList) {
       await ListModel.findByIdAndUpdate({ _id: listId }, req.body);
